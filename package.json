@@ -1,0 +1,61 @@
+{
+  "name": "flex-control",
+  "version": "1.0.0",
+  "description": "Lightweight FSCSS-based plugin for flexible flex layout utilities and helpers",
+  "extension": "fscss",
+  "fscss_version": "^1.1.24",
+  "blocked_methods": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fscss-ttr/flex-control.fscss"
+  },
+  "bugs": {
+    "url": "https://github.com/fscss-ttr/flex-control.fscss/issues"
+  },
+  "file": {
+    "usage": {
+      "directive": "flex-*",
+      "helpers": [
+        "flex",
+        "flex-center",
+        "flex-x",
+        "flex-y",
+        "flex-between",
+        "flex-around",
+        "flex-even",
+        "flex-col",
+        "flex-col-center",
+        "flex-row-center",
+        "flex-wrap",
+        "flex-wrap-center",
+        "flex-start",
+        "flex-end",
+        "flex-stretch",
+        "flex-gap",
+        "flex-col-gap",
+        "flex-layout",
+        "flex-responsive",
+        "flex-inline",
+        "flex-stack",
+        "flex-equal"
+      ]
+    },
+    "modules": [
+      "./flex-control.fscss"
+    ],
+    "remote": "./flex-control.fscss"
+  },
+  "author": {
+    "name": "fscss-ttr"
+  },
+  "keywords": [
+    "fscss",
+    "css",
+    "lightweight",
+    "fscss-based",
+    "flexbox",
+    "layout",
+    "utility"
+  ],
+  "license": "MIT"
+}
