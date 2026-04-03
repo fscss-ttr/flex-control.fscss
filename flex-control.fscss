@@ -1,0 +1,135 @@
+/* =========================
+   FLEX CONTROL PLUGIN
+   ========================= */
+
+
+@define flex(){
+  display: flex;
+}
+
+@define flex-center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@define flex-x(){
+  display: flex;
+  justify-content: center;
+}
+
+@define flex-y(){
+  display: flex;
+  align-items: center;
+}
+
+@define flex-between(){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@define flex-around(){
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@define flex-even(){
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@define flex-col(){
+  display: flex;
+  flex-direction: column;
+}
+
+@define flex-col-center(){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@define flex-row-center(){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@define flex-wrap(){
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@define flex-wrap-center(){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@define flex-start(){
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@define flex-end(){
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@define flex-stretch(){
+  display: flex;
+  align-items: stretch;
+}
+
+@define flex-inline(){
+  display: inline-flex;
+  align-items: center;
+}
+
+@define flex-gap(size){
+  display: flex;
+  gap: @use(size);
+}
+
+@define flex-col-gap(size){
+  display: flex;
+  flex-direction: column;
+  gap: @use(size);
+}
+
+@define flex-stack(gap){
+  display: flex;
+  flex-direction: column;
+  gap: @use(gap);
+}
+
+@define flex-responsive(gap){
+  display: flex;
+  flex-wrap: wrap;
+  gap: @use(gap);
+}
+
+@define flex-layout(dir, justify, align, gap){
+  display: flex;
+  flex-direction: @use(dir);
+  justify-content: @use(justify);
+  align-items: @use(align);
+  gap: @use(gap);
+}
+
+@define flex-equal(gap){
+  display: flex;
+  gap: @use(gap);
+
+  > * {
+    flex: 1;
+  }
+}
