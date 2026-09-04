@@ -1,7 +1,7 @@
 {
   "name": "flex-control",
   "version": "1.0.0",
-  "description": "Lightweight FSCSS-based plugin for flexible flex layout utilities and helpers",
+  "description": "Lightweight FSCSS-based library for flexible flex layout utilities and helpers",
   "extension": "fscss",
   "fscss_version": "^1.1.24",
   "blocked_methods": [],
