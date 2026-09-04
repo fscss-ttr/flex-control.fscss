@@ -1,6 +1,6 @@
 # flex-control
 
-**flex-control** is a lightweight FSCSS-based plugin for flexbox layout utilities. It provides a collection of single-call macros that cover the most common flex patterns — centering, alignment, direction, wrapping, spacing, and responsive layouts — without writing repetitive boilerplate.
+**flex-control** is a lightweight FSCSS-based library for flexbox layout utilities. It provides a collection of single-call macros that cover the most common flex patterns — centering, alignment, direction, wrapping, spacing, and responsive layouts — without writing repetitive boilerplate.
 
 * **Alignment shortcuts:** instant centering on both axes (`flex-center`), horizontal-only (`flex-x`), vertical-only (`flex-y`), or no alignment (`flex`).
 * **Distribution helpers:** `flex-between`, `flex-around`, and `flex-even` for common `justify-content` patterns, all with `align-items: center` included.
@@ -10,14 +10,14 @@
 * **Power macros:** `flex-layout(dir, justify, align, gap)` for full control in one call, `flex-equal(gap)` for equal-width children, and `flex-responsive(gap)` for wrap + gap combos.
 * **Edge cases:** `flex-inline` for inline-flex, `flex-stretch`, `flex-start`, and `flex-end`.
 
-flex-control is implemented entirely in FSCSS, following the same **FSCSS plugin logic** as libraries like [st-core](https://github.com/fscss-ttr/st-core.fscss).
+flex-control is implemented entirely in FSCSS, following the same **FSCSS library logic** as libraries like [st-core](https://github.com/fscss-ttr/st-core.fscss).
 
 ## Installation
 
 Include FSCSS v1.1.24 or higher, then import **flex-control** via `@import`:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/fscss@1.1.24/exec.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/fscss@1.2.0/runtime.min.js" defer></script>
 ```
 
 This (better)
@@ -125,7 +125,7 @@ This expands to:
 ## Example
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/fscss@1.1.24/exec.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/fscss@1.2.0/runtime.min.js" defer></script>
 <style>
 @import(exec(*) from flex-control)
 
